@@ -5,10 +5,10 @@
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sequi ea sint iusto quibusdam dolor nisi autem qui dolores nam quis facilis pariatur, veniam ratione. Incidunt consectetur ducimus quisquam deleniti?
   images:
     - description: exemplo
-      img_path: produt-exemplo.jpg
+      img_path: /assets/img/produtos/produt-exemplo.jpg
       
     - description: exemplo
-      img_path: produt-exemplo.jpg
+      img_path: /assets/img/produtos/produt-exemplo.jpg
 
 - title: Produto exemplo 2
   ref: 000099990002
@@ -17,7 +17,7 @@
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sequi ea sint iusto quibusdam dolor nisi autem qui dolores nam quis facilis pariatur, veniam ratione. Incidunt consectetur ducimus quisquam deleniti?
   images:
     - description: exemplo
-      img_path: produt-exemplo.jpg
+      img_path: /assets/img/produtos/produt-exemplo.jpg
 
     - description: exemplo
-      img_path: produt-exemplo.jpg
+      img_path: /assets/img/produtos/produt-exemplo.jpg
