@@ -1,0 +1,30 @@
+- title: A empresa
+  img_path: /assets/img/banner_5.jpg
+  cta: Entre em contato
+  cta_path: contato
+  description: Nosso foco é levar produtos de qualidade aos nossos clientes
+
+- title: A empresa
+  img_path: /assets/img/banner_2.jpg
+  cta: Entre em contato
+  cta_path: contato
+  description: Nosso foco é levar produtos de qualidade aos nossos clientes
+
+- title: A empresa
+  img_path: /assets/img/banner_3.jpg
+  cta: Entre em contato
+  cta_path: contato
+  description: Nosso foco é levar produtos de qualidade aos nossos clientes
+
+- title: A empresa
+  img_path: /assets/img/banner_4.jpg
+  cta: Entre em contato
+  cta_path: contato
+  description: Nosso foco é levar produtos de qualidade aos nossos clientes
+
+- title: A empresa
+  img_path: /assets/img/banner_1.jpg
+  cta: Entre em contato
+  cta_path: contato
+  description: Nosso foco é levar produtos de qualidade aos nossos clientes
+

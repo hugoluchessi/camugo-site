@@ -1,0 +1,43 @@
+<header class="container">
+
+  {% assign default_paths = site.pages | map: "path" %}
+  {% assign page_paths = site.header_pages | default: default_paths %}
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" title="{{ site.title | escape }}" rel="author" href="{{ "/ " | relative_url }}">
+       {% include camugo-brand.svg %}
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Pular navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    {% if page_paths %}
+
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ml-auto mr-2">
+        {% for path in page_paths %}
+          {% assign my_page = site.pages | where: "path", path | first %}
+          {% if my_page.title %}
+          <li class="nav-item">
+            <a class="nav-link {% if path.url == page.url %} active {% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <div class="input-group input-group-sm">
+          <input class="form-control" type="search" placeholder="Buscar produtos" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-outline-primary pt-2 pb-0" type="button">{% octicon search %}</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+    {% endif %}
+
+  </nav>
+
+</header>

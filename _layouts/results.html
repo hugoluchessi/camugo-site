@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<nav class="breadcrumb-container mb-0">
+  <div class="breadcrumb-bg-secondary">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Produtos</li>
+      </ol>
+    </div>
+  </div>
+</nav>
+
+<section class="container">
+  <div class="row">
+    <div class="col">1-20 de 344 resultados encontrados</div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-3">
+      <h4>Categorias</h4>
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active">Todas</a>
+        <a href="#" class="list-group-item list-group-item-action">Ferragens e Acessórios</a>
+        <a href="#" class="list-group-item list-group-item-action">Adesivos de Contato</a>
+        <a href="#" class="list-group-item list-group-item-action">Químicas para tintura</a>
+        <a href="#" class="list-group-item list-group-item-action">Ferramentas</a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="row flex-wrap">
+         {% for produto in site.data.produtos %}
+          <div class="col-lg-3 col-sm-4 col-6 mb-3">
+          
+              <img class="img-fluid" src="{{ "/assets/img/produtos/produto-exemplo.jpg" | absolute_path}}" alt="{{ produto.title }}">
+              <div class="product-title">
+                <h6>
+                  <a href="{{ produto.url }}" title="{{ produto.title }}">
+                    {{ produto.title }}
+                  </a>
+                </h6>
+            </div>
+          </div>
+         {% endfor%}
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+    <!-- {% if site.posts.size > 0 %}
+        <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+          <ul class="post-list">
+            {% for post in site.posts %}
+              <li>
+                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+    
+                <h3>
+                  <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                </h3>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %} -->

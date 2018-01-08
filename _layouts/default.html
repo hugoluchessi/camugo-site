@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "pt-BR" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    {% if page.breadcrumb %}
+      {% include breadcrumb.html %}
+    {% endif %}
+
+    <main class="page-content" aria-label="Content">
+      <div>
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+
+    {% include schema.html %}
+  </body>
+
+</html>

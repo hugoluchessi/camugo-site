@@ -1,0 +1,23 @@
+<footer class="footer-main">
+  <div class="container">
+    <div class="row">
+      <div class="col mr-auto">
+      <ul class="nav">
+        {% for path in page_paths %} {% assign my_page = site.pages | where: "path", path | first %} {% if my_page.title %}
+        <li class="nav-item">
+          <a class="nav-link {% if path.url == page.url %}active{% endif %}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+      <address class="small mt-3 pl-3">
+        <h6>Camugo - Acessórios para móveis</h6>
+        Rua Thales dos Santos Freire, 480, Baeta Neves | São Bernardo do Campo, SP
+        <br> Telefone: (11) 4425-5004
+      </address>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        {% include camugo-brand-dark.svg %}
+      </div>
+    </div>
+  </div>
+</footer>

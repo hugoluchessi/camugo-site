@@ -1,0 +1,116 @@
+---
+layout: default
+---
+<section id="bannersHome">
+  <div id="carroselControls" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner">
+    {% for banner in site.data.banners %}
+   
+    <div class="carousel-item {% if banner == site.data.banners[0] %} active {% endif %}">
+      <img class="d-block w-100" src="{{ banner.img_path | absolute_url }}" alt="{{ banner.cta }}">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{ banner.title }}</h5>
+        <p>{{ banner.description }}</p>
+        <a href="{{ banner.cta_path | relative_url }}" class="btn btn-primary">{{ banner.cta }}</a>
+      </div>
+    </div>
+    {% endfor %}  
+    </div>
+    
+    <a class="carousel-control-prev" href="#carroselControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+    <a class="carousel-control-next" href="#carroselControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+  </div>
+</section>
+
+<section class="mt-4">
+  <div class="container">
+    
+    <div class="heading-home">
+      <h3>Linhas de produtos que oferecemos</h3>
+    </div>
+
+    <div class="card-deck card-home">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a href="{{ "/produtos" | relative_url }}">Adesivos de Contato</a>
+          </h5>
+          <p class="card-text">Entregamos uma linha completa da melhor qualidade de adesivos de contato.</p>
+        </div>
+        <img class="card-img-bottom mb-3" src="{{ "/assets/img/home_1.jpg" | absolute_url }}" alt="Card image cap">
+        <div class="card-footer">
+            <a href="{{ "/produtos" | relative_url }}" class="btn btn-secondary btn-block">Explore os Produtos</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a href="{{ "/produtos" | relative_url }}">Químicos para Tintura</a>
+          </h5>
+          <p class="card-text">Vernizes, solventes e thinneres. Temos uma série de opções para você utilizar em seu trabalho.</p>
+        </div>
+        <img class="card-img-bottom mb-3" src="{{ "/assets/img/home_2.jpg" | absolute_url }}" alt="Card image cap">
+        <div class="card-footer">
+          <a href="{{ "/produtos" | relative_url }}" class="btn btn-secondary btn-block">Explore os Produtos</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a href="{{ "/produtos" | relative_url }}">Ferragens e acessórios</a>
+          </h5>
+          <p class="card-text">Encontre uma enorme variedade de peças: dobradiças, parafusos, cantoneiras, aramados, rodízios e mais.</p>
+        </div>
+        <img class="card-img-bottom mb-3" src="{{ "/assets/img/home_3.jpg" | absolute_url }}" alt="Card image cap">
+        <div class="card-footer">
+          <a href="{{ "/produtos" | relative_url }}" class="btn btn-secondary btn-block">Explore os Produtos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="mt-4">
+  <div class="container">
+    <div class="heading-home">
+      <h3>Produto em Destaque</h3>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <img class="img-fluid" src="{{ "/assets/img/produtos/produto-exemplo.jpg" | absolute_url }}" alt="">
+      </div>
+      <div class="col">
+        <h5><a href="#">Produto de exemplo</a></h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident delectus explicabo ab quis eligendi sed et, suscipit veritatis distinctio vero amet praesentium numquam exercitationem saepe rem a iusto error sit?</p>
+        <a href="#" class="btn btn-primary">Ver Detalhes</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-4">
+  <div class="container">
+    <div class="heading-home">
+      <h3>Parcerias</h3>
+    </div> 
+    <div class="row">
+      <div class="col mr-auto">
+        <p class="lead">Qualidade do produto, capacidade de atendimento e um forte compromisso com a sustentabilidade são os critérios para nossas parcerias</p>
+        <p>Contamos com fornecedores selecionados para trazer as melhores novidades aos nossos clientes.</p>
+        <a href="{{ "/parcerias" | relative_url }}" class="btn btn-primary">Conheca nossas parcerias</a>
+      </div>
+      <div class="col-md-5 mt-sm-3">
+        <img class="img-fluid" src="{{ "/assets/img/home_partners.jpg" | absolute_url }}" alt="">
+      </div>
+    </div>
+  </div>
+</section>

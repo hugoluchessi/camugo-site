@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<nav aria-label="breadcrumb bg-primary">
+  <ol class="breadcrumb bg-primary">
+    <li class="breadcrumb-item active" aria-current="page">{{ page.breadcrumb | escape }}</li>
+  </ol>
+</nav>
+
+<div class="container">
+  <article class="post">
+  
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+    </header>
+  
+    <div class="post-content">
+      {{ content }}
+    </div>
+  
+  </article>
+</div>
+

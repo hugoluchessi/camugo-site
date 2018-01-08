@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<div class="container">
+  <section class="intro">
+    <div class="row">
+      <div class="col-sm">
+        <p>As parcerias na Camugo existem desde o início da empresa. Contamos com fornecedores selecionados para trazer as melhores novidades aos nossos clientes. Qualidade do produto, capacidade de atendimento e um forte compromisso com a sustentabilidade são os critérios para nossas
+        parcerias</p>
+        <blockquote class="blockquote">
+          <p>Nós da Camugo estamos sempre em busca de fornecedores firmes com o nosso compromisso de trazer produtos de qualidade e muitas novidades para nossos clientes.</p>
+          <footer class="blockquote-footer">Camila Luchessi</footer>
+        </blockquote>
+        <a href="{{ "/contato" | relative_url }}">Entre em contato</a> e saiba mais sobre nossas parcerias. 
+      </div>
+      <div class="col-sm">
+        <img class="img-fluid mb-3" src="{{ "/assets/img/home_partners.jpg" | absolute_url }}" alt="Seja uma parceria">
+      </div>
+    </div>
+  </section>
+
+  <section id="parcerias">
+
+    <div class="heading-home">
+      <h3>Parcerias</h3>
+    </div>
+    
+    <div class="row card-partners">
+      {% for parceria in site.data.parcerias %}
+       {% if parceria.logo_path %}
+        <div class="col-lg-3 col-sm-4 col-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                {% if parceria.link_path %}
+                <a href="{{ parceria.link_path | absolute_url }}" title="{{ parceria.title }}">
+                  <img class="card-img-top" src="/assets/img/parcerias/{{ parceria.logo_path }}" alt="{{ parceria.title }}">
+                </a>
+                {% else %}
+                <img class="card-img-top" src="/assets/img/parcerias/{{ parceria.logo_path }}" alt="{{ parceria.title }}">
+                {% endif %}
+              </h5>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  </section>
+
+
+</div>
+
