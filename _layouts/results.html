@@ -33,7 +33,7 @@ layout: default
          {% for produto in site.data.produtos %}
           <div class="col-lg-3 col-sm-4 col-6 mb-3">
           
-              <img class="img-fluid" src="{{ "/assets/img/produtos/produto-exemplo.jpg" | absolute_path }}" alt="{{ produto.title }}">
+              <img class="img-fluid" src="{{ "/assets/img/produtos/produto-exemplo.jpg" | relative_path }}" alt="{{ produto.title }}">
               <div class="product-title">
                 <h6>
                   <a href="{{ produto.url }}" title="{{ produto.title }}">

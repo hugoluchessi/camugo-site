@@ -35,10 +35,10 @@ layout: default
               <h5 class="card-title">
                 {% if parceria.link_path %}
                 <a href="{{ parceria.link_path | absolute_url }}" title="{{ parceria.title }}">
-                  <img class="card-img-top" src="{{ parceria.logo_path | absolute_path }}" alt="{{ parceria.title }}">
+                  <img class="card-img-top" src="{{ parceria.logo_path | relative_path }}" alt="{{ parceria.title }}">
                 </a>
                 {% else %}
-                <img class="card-img-top" src="{{ parceria.logo_path | absolute_path }}" alt="{{ parceria.title }}">
+                <img class="card-img-top" src="{{ parceria.logo_path | relative_path }}" alt="{{ parceria.title }}">
                 {% endif %}
               </h5>
             </div>
