@@ -882,3 +882,6 @@ $breadcrumb-active-color:               white;
 // // Printing
 // $print-page-size:                   a3 !default;
 // $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
