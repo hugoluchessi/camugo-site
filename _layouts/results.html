@@ -21,23 +21,20 @@ layout: default
     <div class="col-md-3">
       <h4>Categorias</h4>
       <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active">Todas</a>
-        <a href="#" class="list-group-item list-group-item-action">Ferragens e Acessórios</a>
-        <a href="#" class="list-group-item list-group-item-action">Adesivos de Contato</a>
-        <a href="#" class="list-group-item list-group-item-action">Químicas para tintura</a>
-        <a href="#" class="list-group-item list-group-item-action">Ferramentas</a>
+        <a href="{{ "/produtos" | relative_url }}" class="list-group-item list-group-item-action active">Todas</a>
+        {% for category in site.data.categories %}
+          <a href="{{ category.url | relative_url }}" class="list-group-item list-group-item-action">{{ category.title }}</a>
+        {% endfor%}
       </div>
     </div>
     <div class="col">
       <div class="row flex-wrap">
-         {% for produto in site.data.produtos %}
+         {% for product in site.produtos %}
           <div class="col-lg-3 col-sm-4 col-6 mb-3">
-          
-              <img class="img-fluid" src="{{ "/assets/img/produtos/produto-exemplo.jpg" | absolute_url }}" alt="{{ produto.title }}">
               <div class="product-title">
                 <h6>
-                  <a href="{{ produto.url }}" title="{{ produto.title }}">
-                    {{ produto.title }}
+                  <a href="{{ product.url | relative_url }}" title="{{ product.title }}">
+                    {{ product.title }}
                   </a>
                 </h6>
             </div>
@@ -48,20 +45,3 @@ layout: default
   </div>
 
 </section>
-
-
-    <!-- {% if site.posts.size > 0 %}
-        <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-          <ul class="post-list">
-            {% for post in site.posts %}
-              <li>
-                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                <span class="post-meta">{{ post.date | date: date_format }}</span>
-    
-                <h3>
-                  <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                </h3>
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %} -->

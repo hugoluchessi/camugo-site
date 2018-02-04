@@ -27,18 +27,18 @@ layout: default
     </div>
     
     <div class="row card-partners">
-      {% for parceria in site.data.parcerias %}
-       {% if parceria.logo_path %}
+      {% for partner in site.data.partners %}
+       {% if partner.logo_path %}
         <div class="col-lg-3 col-sm-4 col-6 mb-3">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">
-                {% if parceria.link_path %}
-                <a href="{{ parceria.link_path | absolute_url }}" title="{{ parceria.title }}">
-                  <img class="card-img-top" src="{{ parceria.logo_path | absolute_url }}" alt="{{ parceria.title }}">
+                {% if partner.link_path %}
+                <a href="{{ partner.link_path | absolute_url }}" title="{{ partner.title }}">
+                  <img class="card-img-top" src="{{ partner.logo_path | absolute_url }}" alt="{{ partner.title }}">
                 </a>
                 {% else %}
-                <img class="card-img-top" src="{{ parceria.logo_path | absolute_url }}" alt="{{ parceria.title }}">
+                <img class="card-img-top" src="{{ partner.logo_path | absolute_url }}" alt="{{ partner.title }}">
                 {% endif %}
               </h5>
             </div>
