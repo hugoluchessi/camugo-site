@@ -84,14 +84,15 @@ layout: default
     <div class="heading-home">
       <h3>Produto em Destaque</h3>
     </div>
+    {% assign product = site.produtos.first %}
     <div class="row">
       <div class="col-4">
-        <img class="img-fluid" src="{{ "/assets/img/produtos/produto-exemplo.jpg" | absolute_url }}" alt="">
+        <img class="img-fluid" src="{{ product.images.first.image_path | absolute_url }}" alt="">
       </div>
       <div class="col">
-        <h5><a href="#">Produto de exemplo</a></h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident delectus explicabo ab quis eligendi sed et, suscipit veritatis distinctio vero amet praesentium numquam exercitationem saepe rem a iusto error sit?</p>
-        <a href="#" class="btn btn-primary">Ver Detalhes</a>
+        <h5><a href="#">{{ product.title }}</a></h5>
+        <p>{{ product.description }}</p>
+        <a href="{{ product.url | relative_url }}" class="btn btn-primary">Ver Detalhes</a>
       </div>
     </div>
   </div>

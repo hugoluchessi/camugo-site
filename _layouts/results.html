@@ -17,9 +17,10 @@ layout: default
     <div class="col">1-20 de 344 resultados encontrados</div>
   </div>
   <hr>
+
+  <h4>Categorias</h4>
   <div class="row">
     <div class="col-md-3">
-      <h4>Categorias</h4>
       <div class="list-group">
         <a href="{{ "/produtos" | relative_url }}" class="list-group-item list-group-item-action active">Todas</a>
         {% for category in site.data.categories %}
@@ -31,8 +32,10 @@ layout: default
       <div class="row flex-wrap">
          {% for product in site.produtos %}
           <div class="col-lg-3 col-sm-4 col-6 mb-3">
+              <img class="img-fluid" src="{{ product.images.first.image_path | absolute_url }}" alt="{{ image.first.title }}">
               <div class="product-title">
-                <h6>
+                <br>
+                <h6 class="text-uppercase">
                   <a href="{{ product.url | relative_url }}" title="{{ product.title }}">
                     {{ product.title }}
                   </a>

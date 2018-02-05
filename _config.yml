@@ -45,3 +45,4 @@ exclude: []
 collections:
   produtos:
     output: true 
+    permalink: /produtos/:title
