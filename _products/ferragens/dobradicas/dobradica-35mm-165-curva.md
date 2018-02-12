@@ -1,16 +1,14 @@
 ---
     layout: product
-    title: Dobradiça 35mm Reta
+    title: Dobradiça 35mm 165 Curva
     partner: HD Laminados
-    category: Ferragens
-    category_url: /produtos/ferragens
+    categories: Ferragens     
+    subcategory: dobradicas
     description: "Com sistema de amortecimento e engate rápido integrado. Para móveis sofisticados, onde suavidade e silêncio no movimento das portas são essenciais."
     images: 
       - title: dobradicao 35mm Reta
-        image_path: /assets/produtos/dobradica-35mm-reta.jpg
+        image_path: /assets/products/dobradica-35mm-165-curva.jpg
 
-      - title: Dobradiça Specificações
-        image_path: /assets/produtos/dobradica-35mm-reta-spec.jpg
 ---
 
 Acabamento: 

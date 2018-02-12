@@ -1,15 +1,16 @@
 --- 
 layout: default 
 ---
+
 <nav class="breadcrumb-container mb-0">
   <div class="breadcrumb-bg-secondary">
     <div class="container">
       <ol class="breadcrumb">
         <li class="breadcrumb-item " aria-current="page">
-          <a href="{{ "/produtos" | relative_url }}">Produtos</a>
+          <a href="{{ "/produtos/" | prepend: site.baseurl }}">Produtos</a>
         </li>
         <li class="breadcrumb-item " aria-current="page">
-          <a href="{{ page.category_url | relative_url }}">{{ page.category }}</a>
+          <a href="{{ "/produtos/" | prepend: site.baseurl }}{{ page.categories[0] | downcase  }}">{{ page.categories[0] }}</a>
         </li>
         <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
       </ol>
@@ -54,5 +55,38 @@ layout: default
 
     </div>
     </article>
+
+    <hr>
+
+    <section>
+      <h3>Produtos Relacionados</h3>
+      <div class="card-deck">
+
+        {% assign num = 0 %}
+        {% for product in site.products %}
+            {% if product.title == page.title %}
+              {% assign num = forloop.index %} 
+              {% if forloop.rindex <= 3 %}
+                {% assign num = 0 %}
+              {% endif %} 
+              {% break %}
+            {% endif %}
+        {% endfor %}
+
+        {% for product in site.products limit:3 offset:num %}
+          {% if product.categories contains page.categories[0] %}
+            <div class="card">
+              <img class="card-img-top mb-3" src="{{ product.images[0].image_path | absolute_url }}" alt="{{ product.title }}">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="{{ product.url | relative_url }}">{{ product.title }}</a>
+                </h5>
+                <p class="card-text">{{ product.description }}</p>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
 
 </div>

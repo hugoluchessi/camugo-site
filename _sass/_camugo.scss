@@ -146,11 +146,11 @@ h5, .h5, h5, .h6 {
 
 // Breadcrumb
 .breadcrumb-container {
-  background-image: url("/assets/img/breadcrumb_bg.jpg");
+  background-image: url( $baseurl + "/assets/img/breadcrumb_bg.jpg");
   background-position: center center;
   margin-bottom: 3em;
   .breadcrumb-bg {
-    background-color: rgba($primary, .88);
+    background-color: rgba($primary, .88)
   }
   .breadcrumb-bg-secondary {
     background-color: rgba($secondary, .88);
@@ -193,4 +193,14 @@ h5, .h5, h5, .h6 {
       }
     }
   }
+}
+
+// Results page
+.nav.nav-pills {
+  .nav-link {
+    cursor: pointer;
+  }
+}
+.filterDiv {
+  display: none;
 }
