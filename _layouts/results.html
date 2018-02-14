@@ -13,12 +13,6 @@ layout: default
 </nav>
 
 <section class="container">
-  <!-- <div class="row">
-    <div class="col">
-       resultados encontrados
-      </div>
-  </div>
-  <hr> -->
 
   <div class="row">
     <div class="col-md-3">
@@ -33,9 +27,9 @@ layout: default
     <div class="col">
         {% if page.subcategories %}
           <ul id="navContainer" class="nav nav-pills justify-content-center">
-            <li class="nav-link active" onclick="filterSelection('all')">Todos</li>
+            <li class="filter-link nav-link active" onclick="filterSelection('all')">Todos</li>
           {% for subcategory in page.subcategories %}
-            <li class="nav-link" onclick="filterSelection('{{ subcategory.url }}')">
+            <li class="filter-link nav-link" onclick="filterSelection('{{ subcategory.url }}')">
               {{ subcategory.title | capitalize }}
             </li>
           {% endfor %}
@@ -47,9 +41,9 @@ layout: default
           {% for product in site.products %}
             {% if product.categories contains page.title %}
             {% assign count = forloop.index %}
-              <div class="col-lg-3 col-sm-4 col-6 mb-3 filterDiv {{ product.subcategory | downcase }}">
+              <div class="col-lg-3 col-sm-4 col-6 mb-3 summary-item summary-filter {{ product.subcategory | downcase }}">
                   <a href="{{ product.url | relative_url }}" title="{{ product.title }}">
-                    <img class="img-fluid" src="{{ product.images.first.image_path | absolute_url }}" alt="{{ image.first.title }}">
+                    <img class="img-fluid mr-auto ml-auto d-block" src="{{ product.images.first.image_path | absolute_url }}" alt="{{ image.first.title }}">
                   </a>
                   <div class="product-title">
                     <br>
@@ -80,7 +74,7 @@ layout: default
   filterSelection("all");
   function filterSelection(c) {
     var x, i;
-    x = document.getElementsByClassName("filterDiv");
+    x = document.getElementsByClassName("summary-filter");
     if (c == "all") c = "";
     for (i = 0; i < x.length; i++) {
       x[i].classList.remove('d-block');
@@ -90,10 +84,10 @@ layout: default
 
   // Add active class to the current button (highlight it)
   // var btnContainer = document.getElementById("navContainer");
-  var btns = document.getElementsByClassName("nav-link");
+  var btns = document.getElementsByClassName("filter-link");
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function () {
-      var current = document.getElementsByClassName("nav-link active");
+      var current = document.getElementsByClassName("filter-link active");
       current[0].classList.remove("active");
       this.className += " active";
     });

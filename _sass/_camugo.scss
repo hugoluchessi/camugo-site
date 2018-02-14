@@ -208,6 +208,19 @@ h5, .h5, h5, .h6 {
     cursor: pointer;
   }
 }
-.filterDiv {
+.summary-filter {
   display: none;
 }
+
+.summary-item {
+  img {
+    max-height: 130px;
+  }
+}
+
+.featured-item {
+  img {
+    max-height: 190px;
+  }
+}
+

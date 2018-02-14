@@ -28,9 +28,9 @@ layout: default
       <div class="row flex-wrap">
         {% for product in site.products %}
         {% if product.featured %}
-        <div class="col-lg-4 col-sm-4 col-6 mb-3">
+        <div class="featured-item col-lg-4 col-sm-4 col-6 mb-3">
             <a href="{{ product.url | relative_url }}" title="{{ product.title }}">
-              <img class="img-fluid" src="{{ product.images.first.image_path | absolute_url }}" alt="{{ image.first.title }}">
+              <img class="img-fluid mr-auto ml-auto d-block" src="{{ product.images.first.image_path | absolute_url }}" alt="{{ image.first.title }}">
             </a>
             <div class="product-title">
               <br>
@@ -46,11 +46,11 @@ layout: default
       </div>
       <hr>
       <div class="row flex-wrap">
-        {% for product in site.products %}
+        {% for product in site.products limit:12 %}
         {% if product.featured != 'yes' %}
-        <div class="col-lg-3 col-sm-4 col-6 mb-3">
+        <div class="summary-item col-lg-3 col-sm-4 col-6 mb-3">
             <a href="{{ product.url | relative_url }}" title="{{ product.title }}">
-              <img class="img-fluid" src="{{ product.images.first.image_path | absolute_url }}" alt="{{ image.first.title }}">
+              <img class="img-fluid mr-auto ml-auto d-block" src="{{ product.images.first.image_path | absolute_url }}" alt="{{ image.first.title }}">
             </a>
             <div class="product-title">
               <br>
