@@ -7,10 +7,10 @@
     description: "Com sistema de amortecimento e engate rápido integrado. Para móveis sofisticados, onde suavidade e silêncio no movimento das portas são essenciais."
     images: 
       - title: dobradicao 35mm Reta
-        image_path: /assets/products/dobradica-35mm-reta.jpg
+        image_path: /assets/products/dobradicas/dobradica-35mm-reta.jpg
 
       - title: Dobradiça Specificações
-        image_path: /assets/products/dobradica-35mm-reta-spec.jpg
+        image_path: /assets/products/dobradicas/dobradica-35mm-reta-spec.jpg
 ---
 
 Acabamento: 

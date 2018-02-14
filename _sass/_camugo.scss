@@ -61,6 +61,13 @@
 .product-carousel {
   .carousel-inner {
     height: 390px;
+    img {
+      height: auto;
+      max-height: 390px;
+      width: auto;
+      max-width: 100%;
+      margin: 0 auto 0 auto;  
+    }
   }
 }
 .carousel-thumbnails {
