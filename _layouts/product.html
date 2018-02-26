@@ -48,7 +48,9 @@ layout: default
 
       <div class="col-6">
         <h1 class="text-uppercase"><span itemprop="name">{{ page.title }}</span></h1>
+        {% if page.partner %}
         <strong>Fabricante: </strong><span itemprop="brand">{{ page.partner }}</span>
+        {% endif %}
         <p><span itemprop="description">{{ page.description }}</span></p>
         {{ content }}
       </div>
