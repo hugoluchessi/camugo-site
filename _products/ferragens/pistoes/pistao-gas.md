@@ -8,13 +8,13 @@
     description: "Possibilita a abertura de portas basculantes para cima com maciez e suavidade."
     images: 
       - title: Pistão a Gás
-        image_path: /assets/products/pistoes/pistao-a-gas.jpg
+        image_path: /assets/img/products/pistoes/pistao-a-gas.jpg
 
       - title: Pistão a Gás
-        image_path: /assets/products/pistoes/pistao-a-gas-spec.jpg
+        image_path: /assets/img/products/pistoes/pistao-a-gas-spec.jpg
 
       - title: Pistão a Gás
-        image_path: /assets/products/pistoes/pistao-a-gas-spec-2.jpg
+        image_path: /assets/img/products/pistoes/pistao-a-gas-spec-2.jpg
 
 ---
 

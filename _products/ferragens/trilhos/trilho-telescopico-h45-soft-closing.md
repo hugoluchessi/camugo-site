@@ -8,13 +8,13 @@
     description: "O Trilho Telescópico H45 Soft Closing possibilita a abertura total da gaveta e um fechamento suave e silencioso através do seu sistema de amortecimento integrado. Sua praticidade com travas laterais permite a retirada da gaveta."
     images: 
       - title: Trilho telescópico
-        image_path: /assets/products/trilhos/trilho-telescopico-h45-soft-closing.jpg
+        image_path: /assets/img/products/trilhos/trilho-telescopico-h45-soft-closing.jpg
 
       - title: Trilho telescópico
-        image_path: /assets/products/trilhos/trilho-telescopico-h45-soft-closing-spec.jpg
+        image_path: /assets/img/products/trilhos/trilho-telescopico-h45-soft-closing-spec.jpg
 
       - title: Trilho telescópico
-        image_path: /assets/products/trilhos/trilho-telescopico-h45-soft-closing-spec-2.jpg
+        image_path: /assets/img/products/trilhos/trilho-telescopico-h45-soft-closing-spec-2.jpg
 
 ---
 

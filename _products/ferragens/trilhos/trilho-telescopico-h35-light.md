@@ -8,13 +8,13 @@
     description: "O Trilho Telescópico H35 Light possibilita a abertura total da gaveta com deslizamento suave, preciso e resistente. Sua praticidade com travas laterais permite a retirada da gaveta. Desenvolvido para cargas menores."
     images: 
       - title: Trilho telescópico
-        image_path: /assets/products/trilhos/trilho-telescopico-h35-light.jpg
+        image_path: /assets/img/products/trilhos/trilho-telescopico-h35-light.jpg
 
       - title: Trilho telescópico
-        image_path: /assets/products/trilhos/trilho-telescopico-h35-light-spec.jpg
+        image_path: /assets/img/products/trilhos/trilho-telescopico-h35-light-spec.jpg
 
       - title: Trilho telescópico
-        image_path: /assets/products/trilhos/trilho-telescopico-h35-light-spec-2.jpg
+        image_path: /assets/img/products/trilhos/trilho-telescopico-h35-light-spec-2.jpg
 
 ---
 Acabamento

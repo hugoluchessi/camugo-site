@@ -7,7 +7,7 @@
     description: ""
     images: 
       - title: Grampos Box
-        image_path: /assets/products/grampos/grampo-box.jpg
+        image_path: /assets/img/products/grampos/grampo-box.jpg
 
 ---
 

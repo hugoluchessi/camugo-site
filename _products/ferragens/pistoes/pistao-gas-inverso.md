@@ -8,13 +8,13 @@
     description: "Possibilita a abertura de portas basculantes para cima com maciez e suavidade."
     images: 
       - title: Pistão a Gás
-        image_path: /assets/products/pistoes/pistao-a-gas-inverso.jpg
+        image_path: /assets/img/products/pistoes/pistao-a-gas-inverso.jpg
 
       - title: Pistão a Gás
-        image_path: /assets/products/pistoes/pistao-a-gas-inverso-spec.jpg
+        image_path: /assets/img/products/pistoes/pistao-a-gas-inverso-spec.jpg
 
       - title: Pistão a Gás
-        image_path: /assets/products/pistoes/pistao-a-gas-inverso-spec-2.jpg
+        image_path: /assets/img/products/pistoes/pistao-a-gas-inverso-spec-2.jpg
 
 ---
 

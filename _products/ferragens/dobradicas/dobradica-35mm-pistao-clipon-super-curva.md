@@ -8,7 +8,7 @@
     description: "Com sistema de amortecimento e engate rápido integrado. Para móveis sofisticados, onde suavidade e silêncio no movimento das portas são essenciais."
     images: 
       - title: dobradicao 35mm Reta
-        image_path: /assets/products/dobradicas/dobradica-35mm-pistao-clipon-super-curva.jpg
+        image_path: /assets/img/products/dobradicas/dobradica-35mm-pistao-clipon-super-curva.jpg
 
 ---
 

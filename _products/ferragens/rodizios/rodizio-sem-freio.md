@@ -8,13 +8,13 @@
     description: "Os rodízios gel sem freio possuem uma ação de rolamento suave e macia."
     images: 
       - title: Rodízio Sem Freio
-        image_path: /assets/products/rodizios/rodizio-sem-freio.jpg
+        image_path: /assets/img/products/rodizios/rodizio-sem-freio.jpg
 
       - title: Rodízio Sem Freio
-        image_path: /assets/products/rodizios/rodizio-sem-freio-spec.jpg
+        image_path: /assets/img/products/rodizios/rodizio-sem-freio-spec.jpg
 
       - title: Rodízio Sem Freio
-        image_path: /assets/products/rodizios/rodizio-sem-freio-spec-2.jpg
+        image_path: /assets/img/products/rodizios/rodizio-sem-freio-spec-2.jpg
 
 ---
 

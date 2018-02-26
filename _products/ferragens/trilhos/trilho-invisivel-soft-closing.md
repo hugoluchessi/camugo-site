@@ -8,13 +8,13 @@
     description: "O Trilho Invisível Soft Closing possibilita a abertura total da gaveta e um fechamento suave e silencioso através do seu sistema de amortecimento integrado. Desenvolvido para ser oculto e discreto."
     images: 
       - title: Trilho telescópico
-        image_path: /assets/products/trilhos/trilho-invisivel-soft-closing.jpg
+        image_path: /assets/img/products/trilhos/trilho-invisivel-soft-closing.jpg
 
       - title: Trilho telescópico
-        image_path: /assets/products/trilhos/trilho-invisivel-soft-closing-spec.jpg
+        image_path: /assets/img/products/trilhos/trilho-invisivel-soft-closing-spec.jpg
 
       - title: Trilho telescópico
-        image_path: /assets/products/trilhos/trilho-invisivel-soft-closing-spec-2.jpg
+        image_path: /assets/img/products/trilhos/trilho-invisivel-soft-closing-spec-2.jpg
 
 ---
 

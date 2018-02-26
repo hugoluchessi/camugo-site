@@ -1,7 +1,7 @@
 ---
   layout: results
   title: Ferragens
-  image_path: /assets/categories/ferragens.jpg
+  image_path: /assets/img/categories/ferragens.jpg
   description: "Encontre uma enorme variedade de peças: dobradiças, parafusos, cantoneiras, aramados, rodízios e mais."
   subcategories: 
     - title: Dobradiças

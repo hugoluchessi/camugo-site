@@ -7,7 +7,7 @@
     description: ""
     images: 
       - title: Grampos PCN, PCS, PCW
-        image_path: /assets/products/grampos/grampos.jpg
+        image_path: /assets/img/products/grampos/grampos.jpg
 
 ---
 

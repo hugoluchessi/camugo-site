@@ -8,13 +8,13 @@
     description: "O Trilho Telescópico H45 Push Open possibilita a abertura total da gaveta com um simples toque através do seu sistema de mola integrado. Sua praticidade com travas laterais permite a retirada da gaveta."
     images: 
       - title: Trilho telescópico
-        image_path: /assets/products/trilhos/trilho-telescopico-h45-push-open.jpg
+        image_path: /assets/img/products/trilhos/trilho-telescopico-h45-push-open.jpg
 
       - title: Trilho telescópico
-        image_path: /assets/products/trilhos/trilho-telescopico-h45-push-open-spec.jpg
+        image_path: /assets/img/products/trilhos/trilho-telescopico-h45-push-open-spec.jpg
 
       - title: Trilho telescópico
-        image_path: /assets/products/trilhos/trilho-telescopico-h45-push-open-spec-2.jpg
+        image_path: /assets/img/products/trilhos/trilho-telescopico-h45-push-open-spec-2.jpg
 
 ---
 

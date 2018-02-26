@@ -7,7 +7,7 @@
     description: ""
     images: 
       - title: Grampos GS 16
-        image_path: /assets/products/grampos/grampos-gs.jpg
+        image_path: /assets/img/products/grampos/grampos-gs.jpg
 
 ---
 
