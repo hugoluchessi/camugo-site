@@ -70,3 +70,9 @@ images:
      image_path: image_path.jpg
 ```
 
+## Formulário de contato
+O formulário foi criado usando a ferramenta externa [Formspree](https://formspree.io/). 
+
+Os resultados das submissões desse formulário estão sendo recebidos pelo email `dev.camugo@gmail.com`. Para alterar o email que receberá esse contato, deve ser alterado, diretamente na action dor form no layout da página de contato `_contact.html`
+
+
