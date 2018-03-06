@@ -1,7 +1,7 @@
 --- 
 # Only the main Sass file needs front matter (the dashes are enough) 
 ---
-
+$baseurl:"{{ site.baseurl }}";
 @import "custom_variables";
 @import "bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');

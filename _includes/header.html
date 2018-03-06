@@ -20,7 +20,7 @@
         {% for p in navigation_pages %} 
             {% if p.navigation_weight%}
             <li>
-              <a href="{{ p.url | relative_url }}" class="nav-link {% if p.url == page.url %} active {% endif %} " >
+              <a href="{{ p.url | relative_url }}" class="nav-link {% if page.url contains p.url %} active {% endif %} " >
                 {{ p.title }}
               </a>
             </li>
@@ -29,14 +29,14 @@
 
       </ul>
 
-      <form class="form-inline my-2 my-lg-0">
+      <!-- <form class="form-inline my-2 my-lg-0">
         <div class="input-group input-group-sm">
           <input class="form-control" type="search" placeholder="Buscar produtos" aria-label="Search">
           <div class="input-group-append">
             <button class="btn btn-outline-primary pt-2 pb-0" type="button">{% octicon search %}</button>
           </div>
         </div>
-      </form>
+      </form> -->
 
     </div>
 

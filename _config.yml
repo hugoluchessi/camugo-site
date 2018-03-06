@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/~camug135" # the subpath of your site, e.g. /blog
 url: "http://br874.teste.website" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
-github_username:  ""
+github_username: "carolinemg"
 
 # Build settings
 markdown: kramdown
@@ -41,8 +41,10 @@ sass:
 # to override the default setting.
 exclude: []
 
-
 collections:
-  produtos:
+  products:
     output: true
-    permalink: /produtos/:title
+    permalink: /produtos/:path
+  categories:
+    output: true
+    permalink: /produtos/:path/
