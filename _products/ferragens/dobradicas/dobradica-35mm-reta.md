@@ -5,7 +5,7 @@
     categories: Ferragens     
     subcategory: dobradicas
     description: "Com sistema de amortecimento e engate rápido integrado. Para móveis sofisticados, onde suavidade e silêncio no movimento das portas são essenciais."
-    images: 
+    images:
       - title: dobradicao 35mm Reta
         image_path: /assets/img/products/dobradicas/dobradica-35mm-reta.jpg
 
@@ -13,7 +13,7 @@
         image_path: /assets/img/products/dobradicas/dobradica-35mm-reta-spec.jpg
 ---
 
-Acabamento: 
+Acabamento:
 : Niquelado
 
 Ângulo de abertura

@@ -12,10 +12,10 @@ layout: default
           <p>Nós da Camugo estamos sempre em busca de fornecedores firmes com o nosso compromisso de trazer produtos de qualidade e muitas novidades para nossos clientes.</p>
           <footer class="blockquote-footer">Camila Luchessi</footer>
         </blockquote>
-        <a href="{{ "/contato" | relative_url }}">Entre em contato</a> e saiba mais sobre nossas parcerias. 
+        <a href="{{ "/contato" | relative_url }}">Entre em contato</a> e saiba mais sobre nossas parcerias.
       </div>
       <div class="col-sm">
-        <img class="img-fluid mb-3" src="{{ "/assets/img/home_partners.jpg" | absolute_url }}" alt="Seja uma parceria">
+        <img class="img-fluid mb-3" src="{{ "/assets/img/home_partners.jpg" | relative_url }}" alt="Seja uma parceria">
       </div>
     </div>
   </section>
@@ -25,7 +25,7 @@ layout: default
     <div class="heading-home">
       <h3>Parcerias</h3>
     </div>
-    
+
     <div class="row card-partners">
       {% for partner in site.data.partners %}
        {% if partner.logo_path %}
@@ -35,10 +35,10 @@ layout: default
               <h5 class="card-title">
                 {% if partner.link_path %}
                 <a href="{{ partner.link_path | absolute_url }}" title="{{ partner.title }}">
-                  <img class="card-img-top" src="{{ partner.logo_path | absolute_url }}" alt="{{ partner.title }}">
+                  <img class="card-img-top" src="{{ partner.logo_path | relative_url }}" alt="{{ partner.title }}">
                 </a>
                 {% else %}
-                <img class="card-img-top" src="{{ partner.logo_path | absolute_url }}" alt="{{ partner.title }}">
+                <img class="card-img-top" src="{{ partner.logo_path | relative_url }}" alt="{{ partner.title }}">
                 {% endif %}
               </h5>
             </div>
@@ -52,4 +52,3 @@ layout: default
 
 
 </div>
-
