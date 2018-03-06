@@ -13,10 +13,6 @@ layout: default
 </nav>
 
 <section class="container">
-  <div class="row">
-    <div class="col">1-20 de 344 resultados encontrados</div>
-  </div>
-  <hr>
 
   <h4>Categorias</h4>
   <div class="row">
@@ -32,7 +28,7 @@ layout: default
       <div class="row flex-wrap">
          {% for product in site.produtos %}
           <div class="col-lg-3 col-sm-4 col-6 mb-3">
-              <img class="img-fluid" src="{{ product.images.first.image_path | absolute_url }}" alt="{{ image.first.title }}">
+              <img class="img-fluid" src="{{ product.images.first.image_path | relative_url }}" alt="{{ image.first.title }}">
               <div class="product-title">
                 <br>
                 <h6 class="text-uppercase">

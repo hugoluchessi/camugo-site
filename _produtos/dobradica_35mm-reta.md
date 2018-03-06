@@ -2,10 +2,11 @@
     layout: product
     title: Dobradiça 35mm Reta
     partner: HD Laminados
+    url: /produtos/ferragens/dobradica_35mm-reta.html
     category: Ferragens
     category_url: /produtos/ferragens
     description: "Com sistema de amortecimento e engate rápido integrado. Para móveis sofisticados, onde suavidade e silêncio no movimento das portas são essenciais."
-    images: 
+    images:
       - title: dobradicao 35mm Reta
         image_path: /assets/produtos/dobradica-35mm-reta.jpg
 
@@ -13,7 +14,7 @@
         image_path: /assets/produtos/dobradica-35mm-reta-spec.jpg
 ---
 
-Acabamento: 
+Acabamento:
 : Niquelado
 
 Ângulo de abertura
