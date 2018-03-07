@@ -29,40 +29,40 @@ layout: default
         {% for product in site.products %}
         {% if product.featured %}
         <div class="featured-item col-lg-4 col-sm-4 col-6 mb-3">
-            <a href="{{ product.url | relative_url }}" title="{{ product.title }}">
+            <a href="{{ product.url | relative_url }}.html" title="{{ product.title }}">
               <img class="img-fluid mr-auto ml-auto d-block" src="{{ product.images.first.image_path | absolute_url }}" alt="{{ image.first.title }}">
             </a>
             <div class="product-title">
               <br>
               <h6 class="text-uppercase">
-                <a href="{{ product.url | relative_url }}" title="{{ product.title }}">
+                <a href="{{ product.url | relative_url }}.html" title="{{ product.title }}">
                   {{ product.title }}
                 </a>
               </h6>
           </div>
         </div>
         {% endif %}
-        {% endfor%}  
+        {% endfor%}
       </div>
       <hr>
       <div class="row flex-wrap">
         {% for product in site.products limit:12 %}
         {% if product.featured != 'yes' %}
         <div class="summary-item col-lg-3 col-sm-4 col-6 mb-3">
-            <a href="{{ product.url | relative_url }}" title="{{ product.title }}">
+            <a href="{{ product.url | relative_url }}.html" title="{{ product.title }}">
               <img class="img-fluid mr-auto ml-auto d-block" src="{{ product.images.first.image_path | absolute_url }}" alt="{{ image.first.title }}">
             </a>
             <div class="product-title">
               <br>
               <h6 class="text-uppercase">
-                <a href="{{ product.url | relative_url }}" title="{{ product.title }}">
+                <a href="{{ product.url | relative_url }}.html" title="{{ product.title }}">
                   {{ product.title }}
                 </a>
               </h6>
           </div>
         </div>
         {% endif %}
-        {% endfor%}  
+        {% endfor%}
       </div>
     </div>
   </div>

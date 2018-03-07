@@ -7,10 +7,10 @@ layout: default
     <div class="container">
       <ol class="breadcrumb">
         <li class="breadcrumb-item " aria-current="page">
-          <a href="{{ "/produtos/" | prepend: site.baseurl }}">Produtos</a>
+          <a href="{{ site.url }}/produtos">Produtos</a>
         </li>
         <li class="breadcrumb-item " aria-current="page">
-          <a href="{{ "/produtos/" | prepend: site.baseurl }}{{ page.categories[0] | downcase  }}">{{ page.categories[0] }}</a>
+          <a href="{{ site.url }}/produtos/{{ page.categories[0] | downcase  }}">{{ page.categories[0] }}</a>
         </li>
         <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
       </ol>
@@ -81,7 +81,7 @@ layout: default
               <img class="card-img-top mb-3" src="{{ product.images[0].image_path | absolute_url }}" alt="{{ product.title }}">
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="{{ product.url | relative_url }}">{{ product.title }}</a>
+                  <a href="{{ product.url | relative_url }}.html">{{ product.title }}</a>
                 </h5>
                 <p class="card-text">{{ product.description }}</p>
               </div>
