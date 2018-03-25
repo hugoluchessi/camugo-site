@@ -58,26 +58,31 @@ layout: default
     </div>
     </article>
 
-    <hr>
-
+    
+    {% assign num = 0 %}
+    {% for product in site.products %}
+      {% if product.title == page.title %}
+        {% assign num = forloop.index %} 
+        {% if forloop.rindex <= 3 %}
+          {% assign num = 0 %}
+        {% endif %} 
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    
     <section>
-      <h3>Produtos Relacionados</h3>
-      <div class="card-deck">
-
-        {% assign num = 0 %}
-        {% for product in site.products %}
-            {% if product.title == page.title %}
-              {% assign num = forloop.index %} 
-              {% if forloop.rindex <= 3 %}
-                {% assign num = 0 %}
-              {% endif %} 
-              {% break %}
-            {% endif %}
+      {% for product in site.products limit:1 offset:num %}
+      {% if product.categories contains page.categories[0] %}
+        <hr>
+        <h3>Produtos Relacionados</h3>
+        {% endif %}
         {% endfor %}
+
+        <div class="card-deck">
 
         {% for product in site.products limit:3 offset:num %}
           {% if product.categories contains page.categories[0] %}
-            <div class="card">
+            <div class="card col-lg-4 col-md-4">
               <img class="card-img-top mb-3" src="{{ product.images[0].image_path | absolute_url }}" alt="{{ product.title }}">
               <div class="card-body">
                 <h5 class="card-title">
@@ -88,7 +93,9 @@ layout: default
             </div>
           {% endif %}
         {% endfor %}
+
       </div>
+
     </section>
 
 </div>
