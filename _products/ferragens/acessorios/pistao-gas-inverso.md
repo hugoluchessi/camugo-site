@@ -3,7 +3,7 @@
     title: Pistão a Gás Inverso
     partner: HD Laminados
     categories: Ferragens     
-    subcategory: pistoes
+    subcategory: acessorios
     category_url: /produtos/ferragens
     description: "Possibilita a abertura de portas basculantes para cima com maciez e suavidade."
     images: 

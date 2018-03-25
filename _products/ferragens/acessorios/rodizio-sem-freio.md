@@ -3,7 +3,7 @@
     title: Rodízio Gel Sem Freio
     partner: HD Laminados
     categories: Ferragens     
-    subcategory: rodizios
+    subcategory: acessorios
     category_url: /produtos/ferragens
     description: "Os rodízios gel sem freio possuem uma ação de rolamento suave e macia."
     images: 

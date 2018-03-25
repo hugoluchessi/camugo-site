@@ -4,7 +4,7 @@
     partner: HD Laminados
     categories: Ferragens   
     featured: yes  
-    subcategory: rodizios
+    subcategory: acessorios
     category_url: /produtos/ferragens
     description: "Os rodízios gel com e sem freio possuem uma ação de rolamento suave e macia."
     images: 
