@@ -216,8 +216,8 @@ $border-radius-sm:            0;
 // // Font, line-height, and color for body text, headings, and more.
 
 // // stylelint-disable value-keyword-case
-$font-family-sans-serif:         'Source Sans Pro', sans-serif;
-$font-family-serif:              'Noto Serif', serif;
+$font-family-sans-serif:         'Source Sans Pro', Tahoma, Geneva, sans-serif;
+$font-family-serif:              'Noto Serif', Georgia, serif;
 // $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // $font-family-base:            $font-family-sans-serif !default;
 // // stylelint-enable value-keyword-case
@@ -313,8 +313,8 @@ $blockquote-font-size:           1.4em;
 // //
 // // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         2rem !default;
+// $input-btn-padding-y:         .375rem;
+// $input-btn-padding-x:         2rem;
 // $input-btn-line-height:       $line-height-base !default;
 
 // $input-btn-focus-width:       .2rem !default;
@@ -336,8 +336,8 @@ $input-btn-padding-x:         2rem !default;
 // //
 // // For each of Bootstrap's buttons, define text, background, and border color.
 
-// $btn-padding-y:               $input-btn-padding-y !default;
-// $btn-padding-x:               $input-btn-padding-x !default;
+$btn-padding-y:               .375rem !default;
+$btn-padding-x:               2rem !default;
 // $btn-line-height:             $input-btn-line-height !default;
 
 // $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
@@ -571,9 +571,9 @@ $input-padding-x:                       .475em;
 // $nav-tabs-link-active-bg:           $body-bg !default;
 // $nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
 
-// $nav-pills-border-radius:           $border-radius !default;
-// $nav-pills-link-active-color:       $component-active-color !default;
-// $nav-pills-link-active-bg:          $component-active-bg !default;
+$nav-pills-border-radius:           3px;
+$nav-pills-link-active-color:       $dark;
+$nav-pills-link-active-bg:          $light;
 
 // // Navbar
 

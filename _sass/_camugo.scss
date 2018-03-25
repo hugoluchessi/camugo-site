@@ -61,6 +61,13 @@
 .product-carousel {
   .carousel-inner {
     height: 390px;
+    img {
+      height: auto;
+      max-height: 390px;
+      width: auto;
+      max-width: 100%;
+      margin: 0 auto 0 auto;  
+    }
   }
 }
 .carousel-thumbnails {
@@ -146,11 +153,11 @@ h5, .h5, h5, .h6 {
 
 // Breadcrumb
 .breadcrumb-container {
-  background-image: url("/assets/img/breadcrumb_bg.jpg");
+  background-image: url( $baseurl + "/assets/img/breadcrumb_bg.jpg");
   background-position: center center;
   margin-bottom: 3em;
   .breadcrumb-bg {
-    background-color: rgba($primary, .88);
+    background-color: rgba($primary, .88)
   }
   .breadcrumb-bg-secondary {
     background-color: rgba($secondary, .88);
@@ -194,3 +201,26 @@ h5, .h5, h5, .h6 {
     }
   }
 }
+
+// Results page
+.nav.nav-pills {
+  .nav-link {
+    cursor: pointer;
+  }
+}
+.summary-filter {
+  display: none;
+}
+
+.summary-item {
+  img {
+    max-height: 130px;
+  }
+}
+
+.featured-item {
+  img {
+    max-height: 190px;
+  }
+}
+

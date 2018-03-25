@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+<nav class="breadcrumb-container mb-0">
+  <div class="breadcrumb-bg-secondary">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Produtos</li>
+      </ol>
+    </div>
+  </div>
+</nav>
+
+<section class="container">
+
+  <h4>Categorias</h4>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="list-group">
+        <a href="{{ "/produtos" | relative_url }}" class="list-group-item list-group-item-action active">Todas</a>
+        {% for category in site.categories %}
+          <a href="{{ category.url | relative_url }}" class="list-group-item list-group-item-action">{{ category.title }}</a>
+        {% endfor%}
+      </div>
+    </div>
+    <div class="col">
+      <div class="row flex-wrap">
+        {% for product in site.products %}
+        {% if product.featured %}
+        <div class="featured-item col-lg-4 col-sm-4 col-6 mb-3">
+            <a href="{{ product.url | relative_url }}" title="{{ product.title }}">
+              <img class="img-fluid mr-auto ml-auto d-block" src="{{ product.images.first.image_path | absolute_url }}" alt="{{ image.first.title }}">
+            </a>
+            <div class="product-title">
+              <br>
+              <h6 class="text-uppercase">
+                <a href="{{ product.url | relative_url }}" title="{{ product.title }}">
+                  {{ product.title }}
+                </a>
+              </h6>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor%}  
+      </div>
+      <hr>
+      <div class="row flex-wrap">
+        {% for product in site.products limit:12 %}
+        {% if product.featured != 'yes' %}
+        <div class="summary-item col-lg-3 col-sm-4 col-6 mb-3">
+            <a href="{{ product.url | relative_url }}" title="{{ product.title }}">
+              <img class="img-fluid mr-auto ml-auto d-block" src="{{ product.images.first.image_path | absolute_url }}" alt="{{ image.first.title }}">
+            </a>
+            <div class="product-title">
+              <br>
+              <h6 class="text-uppercase">
+                <a href="{{ product.url | relative_url }}" title="{{ product.title }}">
+                  {{ product.title }}
+                </a>
+              </h6>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor%}  
+      </div>
+    </div>
+  </div>
+
+</section>

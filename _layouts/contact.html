@@ -20,22 +20,26 @@ layout: default
       <div class="col-sm">
         <h3>Fale Conosco!</h3>
         <p>Deseja conhecer mais sobre nossos fornecedores e produtos? Deixe uma mensagem que um de nossos atendentes entrará em contato em breve!</p>
-        <form name="contactForm">
+        <form name="contactForm" action="https://formspree.io/dev.camugo@gmail.com" method="post">
+          <input type="hidden" name="_subject" value="Novo contato!" />
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_language" value="pt-BR" />
+          <input type="hidden" name="_next" value="{{ "/" | relative_url }}" />
           <div class="form-group">
             <label for="subject">Título da mensagem</label>
-            <input id="subject" type="text" class="form-control">
+            <input id="subject" type="text" class="form-control" name="_assunto">
           </div>
           <div class="form-group">
             <label for="message">Escreva sua mensagem</label>
-            <textarea class="form-control" id="message" rows="5"></textarea>
+            <textarea class="form-control" id="message" rows="5" name="_mensagem"></textarea>
           </div>
           <div class="form-group">
             <label for="name">Escreva o seu nome</label>
-            <input id="name" type="text" class="form-control">
+            <input id="name" type="text" class="form-control" name="_nome">
           </div>
           <div class="form-group">
             <label for="email">Deixe o seu email para contato</label>
-            <input type="email" class="form-control" id="email">
+            <input type="email" class="form-control" id="email" name="_email_de_contato">
           </div>
           <div class="form-group text-right">
             <button type="submit" class="btn btn-primary">Enviar</button>
