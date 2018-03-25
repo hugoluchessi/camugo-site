@@ -1,7 +1,6 @@
 ---
     layout: product
     title: Dobradiça 35mm 165˚ Pistão Clip-on Reta
-    partner: HD Laminados
     categories: Ferragens     
     subcategory: dobradicas
     category_url: /produtos/ferragens

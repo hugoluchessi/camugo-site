@@ -1,4 +1,5 @@
 ---
   layout: results
-  title: Grampos Industriais
+  title: Grampos
+  label: Grampos Industriais
 ---

@@ -2,7 +2,6 @@
     layout: product
     title: Dobradiça 35mm Curva
     featured: yes
-    partner: HD Laminados
     categories: Ferragens
     subcategory: dobradicas
     description: "Com sistema de amortecimento e engate rápido integrado. Para móveis sofisticados, onde suavidade e silêncio no movimento das portas são essenciais."

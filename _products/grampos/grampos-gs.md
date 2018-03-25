@@ -2,8 +2,7 @@
     layout: product
     title: Grampos GS, GSI, GSN e GSW
     partner: Eolo Grampos
-    categories: Ferragens     
-    subcategory: grampos
+    categories: Grampos 
     description: ""
     images: 
       - title: Grampos GS 16

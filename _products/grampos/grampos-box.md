@@ -2,8 +2,7 @@
     layout: product
     title: Grampos Box
     partner: Eolo Grampos
-    categories: Ferragens     
-    subcategory: grampos
+    categories: Grampos
     description: ""
     images: 
       - title: Grampos Box

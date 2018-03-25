@@ -2,8 +2,7 @@
     layout: product
     title: Grampos 14, 80, 92 
     partner: Eolo Grampos
-    categories: Ferragens     
-    subcategory: grampos
+    categories: Grampos   
     description: ""
     images: 
       - title: Grampos 14
