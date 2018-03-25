@@ -3,7 +3,7 @@
     title: Trilho Telescópico H35 Light
     partner: HD Laminados
     categories: Ferragens     
-    subcategory: trilhos
+    subcategory: corredicas
     category_url: /produtos/ferragens
     description: "O Trilho Telescópico H35 Light possibilita a abertura total da gaveta com deslizamento suave, preciso e resistente. Sua praticidade com travas laterais permite a retirada da gaveta. Desenvolvido para cargas menores."
     images: 

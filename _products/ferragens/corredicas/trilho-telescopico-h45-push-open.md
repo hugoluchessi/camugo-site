@@ -3,7 +3,7 @@
     title: Trilho Telescópico H45 Push Open
     partner: HD Laminados
     categories: Ferragens     
-    subcategory: trilhos
+    subcategory: corredicas
     category_url: /produtos/ferragens
     description: "O Trilho Telescópico H45 Push Open possibilita a abertura total da gaveta com um simples toque através do seu sistema de mola integrado. Sua praticidade com travas laterais permite a retirada da gaveta."
     images: 

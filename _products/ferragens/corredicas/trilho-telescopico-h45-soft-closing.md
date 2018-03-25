@@ -3,7 +3,7 @@
     title: Trilho Telescópico H45 Soft Closing
     partner: HD Laminados
     categories: Ferragens     
-    subcategory: trilhos
+    subcategory: corredicas
     category_url: /produtos/ferragens
     description: "O Trilho Telescópico H45 Soft Closing possibilita a abertura total da gaveta e um fechamento suave e silencioso através do seu sistema de amortecimento integrado. Sua praticidade com travas laterais permite a retirada da gaveta."
     images: 

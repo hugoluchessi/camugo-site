@@ -3,7 +3,7 @@
     title: Trilho Invisível Soft Closing
     partner: HD Laminados
     categories: Ferragens     
-    subcategory: trilhos
+    subcategory: corredicas
     category_url: /produtos/ferragens
     description: "O Trilho Invisível Soft Closing possibilita a abertura total da gaveta e um fechamento suave e silencioso através do seu sistema de amortecimento integrado. Desenvolvido para ser oculto e discreto."
     images: 
