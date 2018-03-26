@@ -20,7 +20,13 @@ layout: default
       <div class="list-group">
         <a href="{{ "/produtos" | relative_url }}" class="list-group-item list-group-item-action active">Todas</a>
         {% for category in site.categories %}
-          <a href="{{ category.url | relative_url }}" class="list-group-item list-group-item-action">{{ category.title }}</a>
+          <a href="{{ category.url | relative_url }}" class="list-group-item list-group-item-action">
+            {% if category.label %}
+              {{ category.label }}
+            {% else %}
+              {{ category.title }}
+            {% endif%}
+          </a>
         {% endfor%}
       </div>
     </div>
