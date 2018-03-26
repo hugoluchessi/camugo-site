@@ -6,18 +6,18 @@ layout: default
 
     <div class="carousel-inner">
     {% for banner in site.data.banners %}
-   
+
     <div class="carousel-item {% if banner == site.data.banners[0] %} active {% endif %}">
-      <img class="d-block w-100" src="{{ banner.img_path | absolute_url }}" alt="{{ banner.cta }}">
+      <img class="d-block w-100" src="{{ banner.img_path | relative_url }}" alt="{{ banner.cta }}">
       <div class="carousel-caption d-none d-md-block">
         <h5>{{ banner.title }}</h5>
         <p>{{ banner.description }}</p>
         <a href="{{ banner.cta_path | relative_url }}" class="btn btn-primary">{{ banner.cta }}</a>
       </div>
     </div>
-    {% endfor %}  
+    {% endfor %}
     </div>
-    
+
     <a class="carousel-control-prev" href="#carroselControls" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Próximo</span>
@@ -31,7 +31,7 @@ layout: default
 
 <section class="mt-4">
   <div class="container">
-    
+
     <div class="heading-home">
       <h3>Linhas de produtos que oferecemos</h3>
     </div>
@@ -68,12 +68,12 @@ layout: default
       {% if product.featured %}
         <div class="row">
           <div class="col-sm-4 mb-3 mb-lg-0 mb-md-0">
-            <img class="img-fluid" src="{{ product.images.first.image_path | absolute_url }}" alt="">
+            <img class="img-fluid" src="{{ product.images.first.image_path | relative_url }}" alt="">
           </div>
           <div class="col">
             <h5><a href="#">{{ product.title }}</a></h5>
             <p>{{ product.description }}</p>
-            <a href="{{ product.url | relative_url }}" class="btn btn-primary">Ver Detalhes</a>
+            <a href="{{ product.url | relative_url }}.html" class="btn btn-primary">Ver Detalhes</a>
           </div>
         </div>
         {% break %}
@@ -86,7 +86,7 @@ layout: default
   <div class="container">
     <div class="heading-home">
       <h3>Parcerias</h3>
-    </div> 
+    </div>
     <div class="row">
       <div class="col mr-auto">
         <p class="lead">Qualidade do produto, capacidade de atendimento e um forte compromisso com a sustentabilidade são os critérios para nossas parcerias</p>
@@ -94,7 +94,7 @@ layout: default
         <a href="{{ "/parcerias" | relative_url }}" class="btn btn-primary">Conheca nossas parcerias</a>
       </div>
       <div class="col-md-5 mt-3 mt-lg-0 mt-md-0">
-        <img class="img-fluid" src="{{ "/assets/img/home_partners.jpg" | absolute_url }}" alt="">
+        <img class="img-fluid" src="{{ "/assets/img/home_partners.jpg" | relative_url }}" alt="">
       </div>
     </div>
   </div>

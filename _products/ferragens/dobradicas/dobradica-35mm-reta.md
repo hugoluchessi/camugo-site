@@ -12,7 +12,7 @@
         image_path: /assets/img/products/dobradicas/dobradica-35mm-reta-spec.jpg
 ---
 
-Acabamento: 
+Acabamento:
 : Niquelado
 
 Ângulo de abertura

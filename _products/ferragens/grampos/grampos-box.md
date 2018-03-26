@@ -1,0 +1,15 @@
+---
+    layout: product
+    title: Grampos Box
+    partner: Eolo Grampos
+    categories: Ferragens     
+    subcategory: grampos
+    description: ""
+    images: 
+      - title: Grampos Box
+        image_path: /assets/img/products/grampos/grampo-box.jpg
+
+---
+
+Aplicações
+: Grampeação de fundo e tampa de caixas de papelão.
