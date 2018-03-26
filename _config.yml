@@ -43,8 +43,8 @@ exclude: []
 
 collections:
   products:
-    output: true
+    output: true 
     permalink: /produtos/:path
   categories:
-    output: true
+    output: true 
     permalink: /produtos/:path/

@@ -4,21 +4,15 @@
   image_path: /assets/img/categories/ferragens.jpg
   description: "Encontre uma enorme variedade de peças: dobradiças, parafusos, cantoneiras, aramados, rodízios e mais."
   subcategories: 
-    - title: Dobradiças
-      url: dobradicas
-
-    - title: Grampos
-      url: grampos
-
     - title:  Parafusos
       url: parafusos
 
-    - title: Pistões
-      url: pistoes
+    - title: Dobradiças
+      url: dobradicas
 
-    - title:  Rodízios
-      url: rodizios
+    - title:  Corrediças
+      url: corredicas
 
-    - title:  Trilhos
-      url: trilhos
+    - title: Acessórios
+      url: acessorios
 ---

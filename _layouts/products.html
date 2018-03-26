@@ -20,7 +20,13 @@ layout: default
       <div class="list-group">
         <a href="{{ "/produtos" | relative_url }}" class="list-group-item list-group-item-action active">Todas</a>
         {% for category in site.categories %}
-          <a href="{{ category.url | relative_url }}" class="list-group-item list-group-item-action">{{ category.title }}</a>
+          <a href="{{ category.url | relative_url }}" class="list-group-item list-group-item-action">
+            {% if category.label %}
+              {{ category.label }}
+            {% else %}
+              {{ category.title }}
+            {% endif%}
+          </a>
         {% endfor%}
       </div>
     </div>
@@ -30,6 +36,7 @@ layout: default
         {% if product.featured %}
         <div class="featured-item col-lg-4 col-sm-4 col-6 mb-3">
             <a href="{{ product.url | relative_url }}.html" title="{{ product.title }}">
+
               <img class="img-fluid mr-auto ml-auto d-block" src="{{ product.images.first.image_path | absolute_url }}" alt="{{ image.first.title }}">
             </a>
             <div class="product-title">
